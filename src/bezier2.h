@@ -13,7 +13,7 @@ typedef struct Point2_s {
 } Point2;
 
 typedef struct Bezier2_s {
-  Point2 points[HMAH_BEZIER2_MAX_POINTS * 2];
+  Point2 points[HMAH_BEZIER2_MAX_POINTS];
   uint32_t pointsCount;
 } Bezier2;
 
