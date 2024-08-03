@@ -32,11 +32,11 @@ typedef struct Bezier3f_s {
 Bezier3 Bezier3_CreateLinear(double x0, double y0, double z0, double x1, double y1, double z1);
 Bezier3 Bezier3_CreateQuadratic(double x0, double y0, double z0, double x1, double y1, double z1, double x2, double y2, double z2);
 Bezier3 Bezier3_CreateCubic(double x0, double y0, double z0, double x1, double y1, double z1, double x2, double y2, double z2, double x3, double y3, double z3);
-Point3 Bezier3_Get(Bezier3* this, double t);
+Point3 Bezier3_Get(const Bezier3* this, double t);
 
 Bezier3f Bezier3f_CreateLinear(float x0, float y0, float z0, float x1, float y1, float z1);
 Bezier3f Bezier3f_CreateQuadratic(float x0, float y0, float z0, float x1, float y1, float z1, float x2, float y2, float z2);
 Bezier3f Bezier3f_CreateCubic(float x0, float y0, float z0, float x1, float y1, float z1, float x2, float y2, float z2, float x3, float y3, float z3);
-Point3f Bezier3f_Get(Bezier3f* this, float t);
+Point3f Bezier3f_Get(const Bezier3f* this, float t);
 
 #endif // __HMAH_BEZIER3_H_
