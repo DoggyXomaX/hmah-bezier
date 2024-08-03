@@ -9,10 +9,6 @@
 #define PLOT_WIDTH 40
 #define PLOT_HEIGHT 20
 
-float absf(const float v) {
-  return v < 0.0f ? -v : v;
-}
-
 void plot2Df(const float* points, const size_t pointsCount) {
   char canvas[PLOT_HEIGHT][PLOT_WIDTH];
   for (int y = 0; y < PLOT_HEIGHT; y++)
