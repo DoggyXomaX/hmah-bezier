@@ -9,6 +9,7 @@ option(HMAH_BEZIER_INCLUDE_BEZIER2 "Include Bezier2 class in lib" ON)
 option(HMAH_BEZIER_INCLUDE_BEZIER3 "Include Bezier3 class in lib" ON)
 option(HMAH_BEZIER_STATIC "Build static library" ON)
 option(HMAH_BEZIER_SHARED "Build shared library" OFF)
+option(HMAH_BEZIER_BUILD_TESTS "Build tests for lib testing" ON)
 
 set(FORCE_INCLUDE_ALL ON)
 
@@ -26,4 +27,8 @@ elseif (${HMAH_BEZIER_SHARED})
   add_library(hmahbezier SHARED ${SOURCES})
 else ()
   message(FATAL_ERROR "Choose HMAH_BEZIER_STATIC or HMAH_BEZIER_SHARED to build!")
+endif ()
+
+if (${HMAH_BEZIER_BUILD_TESTS})
+  add_subdirectory(tests)
 endif ()
