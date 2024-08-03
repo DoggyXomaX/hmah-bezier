@@ -24,6 +24,7 @@ cmake --build .
 * `HMAH_BEZIER_STATIC` build static lib (.a) (default: ON)
 * `HMAH_BEZIER_INCLUDE_BEZIER2` include Bezier2 class in library (default: ON)
 * `HMAH_BEZIER_INCLUDE_BEZIER3` include Bezier3 class in library (default: ON)
+* `HMAH_BEZIER_BUILD_TESTS` also build tests (linear_test, quadratic_test, etc...)
 
 
 ## Usage
@@ -125,6 +126,11 @@ int main(int argc, char* argv[]) {
     }
 }
 ```
+
+### See also:
+* [linear_test](./tests/linear_test.c)
+* [quadratic_test](./tests/quadratic_test.c)
+* [cubic_test](./tests/cubic_test.c)
 
 ## License
 MIT
